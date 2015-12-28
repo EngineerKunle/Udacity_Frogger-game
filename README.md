@@ -1,6 +1,15 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-Students should use this [rubric](https://www.udacity.com/course/viewer/#!/c-nd001/l-2696458597/m-2687128535) for self-checking their submission.
+## Get the boy safely across to the water while avoiding the poisonous bugs.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+### How to Play
+
+1. First clone the project and Run the game using a local server or opening the index.html file.
+
+2. You control the player with the arrow buttons left, right, up and down.
+
+3. Once you reach the top, please enter your name for a response.
+
+4. Enjoy and have fun.
+

@@ -70,8 +70,7 @@ var Player = function () {
    // The image/sprite for our enemies, this uses
    // a helper we've provided to easily load images
    this.sprite = 'images/char-boy.png';
-   this.x = PLAYER_X;
-   this.y = PLAYER_Y;
+   this.resetPosition();
 };
 
 Player.prototype.update = function (dt) {
@@ -102,7 +101,9 @@ Player.prototype.handleInput = function (key) {
       if (this.y > 100) {
          this.y = this.y - 80;
       } else {
+         this.result();
          this.resetPosition();
+         
       }
    }
    //Moves player down
@@ -143,3 +144,11 @@ document.addEventListener('keyup', function (e) {
 
    player.handleInput(allowedKeys[e.keyCode]);
 });
+
+//Response to congratulate User on completing the game.
+Player.prototype.result = function(){
+   var person = prompt("Please enter your name");
+    if (person != null) {
+        alert(person + " well done for completing game");
+    }
+};
